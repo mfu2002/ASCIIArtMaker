@@ -39,26 +39,29 @@
             // 
             // rtbASCII
             // 
-            this.rtbASCII.Location = new System.Drawing.Point(12, 12);
+            this.rtbASCII.Location = new System.Drawing.Point(16, 15);
+            this.rtbASCII.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rtbASCII.Name = "rtbASCII";
-            this.rtbASCII.Size = new System.Drawing.Size(921, 685);
+            this.rtbASCII.Size = new System.Drawing.Size(1227, 842);
             this.rtbASCII.TabIndex = 0;
             this.rtbASCII.Text = "";
             // 
             // picPicture
             // 
-            this.picPicture.Location = new System.Drawing.Point(939, 12);
+            this.picPicture.Location = new System.Drawing.Point(1252, 15);
+            this.picPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picPicture.Name = "picPicture";
-            this.picPicture.Size = new System.Drawing.Size(127, 119);
+            this.picPicture.Size = new System.Drawing.Size(169, 146);
             this.picPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPicture.TabIndex = 1;
             this.picPicture.TabStop = false;
             // 
             // btnPicture
             // 
-            this.btnPicture.Location = new System.Drawing.Point(962, 137);
+            this.btnPicture.Location = new System.Drawing.Point(1283, 169);
+            this.btnPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPicture.Name = "btnPicture";
-            this.btnPicture.Size = new System.Drawing.Size(75, 23);
+            this.btnPicture.Size = new System.Drawing.Size(100, 28);
             this.btnPicture.TabIndex = 2;
             this.btnPicture.Text = "Select Pic";
             this.btnPicture.UseVisualStyleBackColor = true;
@@ -66,9 +69,10 @@
             // 
             // btnASCII
             // 
-            this.btnASCII.Location = new System.Drawing.Point(962, 166);
+            this.btnASCII.Location = new System.Drawing.Point(1283, 204);
+            this.btnASCII.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnASCII.Name = "btnASCII";
-            this.btnASCII.Size = new System.Drawing.Size(75, 23);
+            this.btnASCII.Size = new System.Drawing.Size(100, 28);
             this.btnASCII.TabIndex = 3;
             this.btnASCII.Text = "getASCII";
             this.btnASCII.UseVisualStyleBackColor = true;
@@ -76,24 +80,26 @@
             // 
             // sldTolerance
             // 
-            this.sldTolerance.Location = new System.Drawing.Point(12, 703);
+            this.sldTolerance.Location = new System.Drawing.Point(16, 865);
+            this.sldTolerance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sldTolerance.Maximum = 1000;
             this.sldTolerance.Name = "sldTolerance";
-            this.sldTolerance.Size = new System.Drawing.Size(1054, 45);
+            this.sldTolerance.Size = new System.Drawing.Size(1405, 56);
             this.sldTolerance.TabIndex = 4;
-            this.sldTolerance.Scroll += new System.EventHandler(this.sldTolerance_Scroll);
-            this.sldTolerance.ValueChanged += new System.EventHandler(this.sldTolerance_ValueChanged);
+            this.sldTolerance.Scroll += new System.EventHandler(this.sldTolerance_Changed);
+            this.sldTolerance.ValueChanged += new System.EventHandler(this.sldTolerance_Changed);
             // 
             // frmASCII
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1078, 746);
+            this.ClientSize = new System.Drawing.Size(1437, 918);
             this.Controls.Add(this.sldTolerance);
             this.Controls.Add(this.btnASCII);
             this.Controls.Add(this.btnPicture);
             this.Controls.Add(this.picPicture);
             this.Controls.Add(this.rtbASCII);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmASCII";
             this.Text = "ASCII Maker";
             ((System.ComponentModel.ISupportInitialize)(this.picPicture)).EndInit();
